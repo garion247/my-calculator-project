@@ -13,3 +13,10 @@ function subtract(a, b) {
 // TODO (feature/power-function): add power(base, exponent) function
 
 module.exports = { add, subtract };
+
+function squareRoot(n) {
+    if (n < 0) throw new Error('Cannot take square root of a negative number');
+    return Math.sqrt(n);
+}
+
+module.exports.squareRoot = squareRoot;
